@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Formulário de pesquisa</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Formulário de pesquisa fictício de bootcamp</h1>
+                <p>Obrigado por disponibilizar o seu tempo para preencher esse formulário!</p>
+            </header>
+            <form class="form">
+                <fieldset>
+                    <label for="name">Nome</label>
+                    <input class="input" type="text" id="name" placeholder="Coloque o seu nome" required>
+                </fieldset>   
+                
+                <fieldset>
+                    <label for="email">E-mail</label>
+                    <input class="input" type="email" id="email" placeholder="Coloque o seu e-mail" required>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="age">Idade(opcional)</label>
+                    <input class="input" type="numeric" id="age" placeholder="Idade">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Qual dessas melhor descreve a sua situação?</legend>
+                    <select required>
+                        <option value="estudante">Estudante</option>
+                        <option value="trabalho-integral">Trabalho em tempo integral</option>
+                        <option value="trabalho-meioperiodo">Trabalho meio período</option>
+                        <option value="ensino-integral">Ensino em tempo integral</option>
+                        <option value="naoinformado">Prefiro não dizer</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Você recomendaria o nosso trabalho para alguém?</legend>
+    
+                    <label for="definitely"><input class="radioinput" type="radio" name="recommend" id="definitely" checked> Com certeza</label>
+    
+                    <label for="maybe"><input class="radioinput" type="radio" name="recommend" id="maybe"> Talvez</label>
+    
+                    <label for="notsure"><input class="radioinput" type="radio" name="recommend" id="notsure"> Não tenho certeza</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>O que você mais gosta em nosso bootcamp?</legend>
+                    <select required>
+                        <option value="desafios">Desafios</option>
+                        <option value="projetos">Projetos</option>
+                        <option value="comunidade">Comunidade</option>
+                        <option value="opensource">Open sources</option>
+                    </select>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>O que você gostaria que melhorasse?</legend>
+    
+                    <label for="frontend"><input class="checkboxinput" type="checkbox" id="frontend" name="improve"> Projetos front-end</label>
+                    <label for="backend"><input class="checkboxinput" type="checkbox" id="backend" name="improve"> Projetos back-end</label>
+                    <label for="data"><input class="checkboxinput" type="checkbox" id="data" name="improve"> Visualização de dados</label>
+                    <label for="challenges"><input class="checkboxinput" type="checkbox" id="challenges" name="improve"> Desafios</label>
+                    <label for="opensource"><input class="checkboxinput" type="checkbox" id="opensource" name="improve"> Comunidade open source</label>
+                    <label for="gitter"><input class="checkboxinput" type="checkbox" id="gitter" name="improve"> Salas de ajuda do gitter</label>
+                    <label for="videos"><input class="checkboxinput" type="checkbox" id="videos" name="improve"> Vídeos</label>
+                    <label for="meetups"><input class="checkboxinput" type="checkbox" id="meetups" name="improve"> Salas de encontro de minha cidade</label>
+                    <label for="wiki"><input class="checkboxinput" type="checkbox" id="wiki" name="improve"> Documentação</label>
+                    <label for="forum"><input class="checkboxinput" type="checkbox" id="forum" name="improve"> Forum de ajuda</label>
+                    <label for="other"><input class="checkboxinput" type="checkbox" id="other" name="improve"> Outros cursos</label>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="comments">Algum outro comentário ou sugestão?</label>
+                    <textarea class="inputtextarea" id="comments" cols="30" rows="10" placeholder="Coloque o seu comentário aqui"></textarea>
+                </fieldset>
+                
+                <div class="boxsubmitinput">  
+                    <input class="inputsubmit" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
